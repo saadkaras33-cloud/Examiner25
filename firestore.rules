@@ -1,0 +1,234 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null && request.auth.token.email_verified == true;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidThemeId(themeId) {
+      return themeId is string && themeId.size() >= 2 && themeId.size() <= 40 && themeId.matches('^[a-z0-9-]+$');
+    }
+
+    function isValidLanguageId(language) {
+      return language is string && language in ['en', 'ar', 'genz', 'fr', 'arz'];
+    }
+
+    function isValidUserProfile(data) {
+      return data.keys().hasAll(['ownerId', 'displayName', 'email', 'themeId', 'language', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly([
+          'ownerId',
+          'displayName',
+          'email',
+          'photoUrl',
+          'themeId',
+          'language',
+          'avatar',
+          'savedMusic',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.ownerId is string && data.ownerId == request.auth.uid && data.ownerId.size() <= 128
+        && data.displayName is string && data.displayName.size() >= 1 && data.displayName.size() <= 100
+        && data.email is string && data.email.size() >= 3 && data.email.size() <= 200
+        && isValidThemeId(data.themeId)
+        && isValidLanguageId(data.language)
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && (!('photoUrl' in data) || data.photoUrl == null || (data.photoUrl is string && data.photoUrl.size() <= 1000))
+        && (!('avatar' in data) || data.avatar == null || (data.avatar is map && data.avatar.keys().size() <= 30))
+        && (!('savedMusic' in data) || (
+          data.savedMusic is list
+          && data.savedMusic.size() <= 100
+          && (data.savedMusic.size() == 0 || data.savedMusic[0] is map)
+        ));
+    }
+
+    function isValidExam(data) {
+      return data.keys().hasAll(['ownerId', 'subject', 'type', 'date', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly([
+          'ownerId',
+          'subject',
+          'type',
+          'date',
+          'startTime',
+          'endTime',
+          'room',
+          'material',
+          'topics',
+          'notes',
+          'sourceChatKey',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.ownerId is string && data.ownerId == request.auth.uid && data.ownerId.size() <= 128
+        && data.subject is string && data.subject.size() >= 1 && data.subject.size() <= 200
+        && data.type is string && data.type in ['final', 'midterm', 'monthly', 'quiz', 'practical', 'oral', 'other']
+        && data.date is string && data.date.size() <= 20
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && (!('startTime' in data) || (data.startTime is string && data.startTime.size() <= 10))
+        && (!('endTime' in data) || (data.endTime is string && data.endTime.size() <= 10))
+        && (!('room' in data) || (data.room is string && data.room.size() <= 120))
+        && (!('material' in data) || (data.material is string && data.material.size() <= 500))
+        && (!('topics' in data) || (
+          data.topics is list
+          && data.topics.size() <= 50
+          && (data.topics.size() == 0 || data.topics[0] is string)
+        ))
+        && (!('notes' in data) || (data.notes is string && data.notes.size() <= 1000))
+        && (!('sourceChatKey' in data) || data.sourceChatKey == null || (data.sourceChatKey is string && data.sourceChatKey.size() <= 160));
+    }
+
+    function isValidLesson(data) {
+      return data.keys().hasAll(['ownerId', 'subject', 'title', 'completed', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly([
+          'ownerId',
+          'subject',
+          'title',
+          'notes',
+          'completed',
+          'examId',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.ownerId is string && data.ownerId == request.auth.uid && data.ownerId.size() <= 128
+        && data.subject is string && data.subject.size() >= 1 && data.subject.size() <= 200
+        && data.title is string && data.title.size() >= 1 && data.title.size() <= 300
+        && data.completed is bool
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && (!('notes' in data) || (data.notes is string && data.notes.size() <= 1000))
+        && (!('examId' in data) || data.examId == null || (data.examId is string && data.examId.size() <= 128));
+    }
+
+    match /users/{userId} {
+      allow get: if isSignedIn() && isValidId(userId) && isOwner(userId);
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+      allow create: if isSignedIn()
+        && isValidId(userId)
+        && isOwner(userId)
+        && isValidUserProfile(incoming())
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isSignedIn()
+        && isValidUserProfile(incoming())
+        && isValidId(userId)
+        && isOwner(userId)
+        && incoming().ownerId == existing().ownerId
+        && incoming().createdAt == existing().createdAt
+        && incoming().updatedAt == request.time
+        && incoming().diff(existing()).affectedKeys().hasOnly([
+          'displayName',
+          'photoUrl',
+          'themeId',
+          'language',
+          'avatar',
+          'savedMusic',
+          'updatedAt'
+        ]);
+      allow delete: if isSignedIn() && isValidId(userId) && isOwner(userId);
+
+      match /exams/{examId} {
+        allow get: if isSignedIn()
+          && isValidId(userId)
+          && isValidId(examId)
+          && isOwner(userId)
+          && get(/databases/$(database)/documents/users/$(userId)).data.ownerId == request.auth.uid;
+        allow list: if isSignedIn() && isOwner(userId) && existing().ownerId == request.auth.uid;
+        allow create: if isSignedIn()
+          && isValidId(userId)
+          && isValidId(examId)
+          && isOwner(userId)
+          && isValidExam(incoming())
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time
+          && get(/databases/$(database)/documents/users/$(userId)).data.ownerId == request.auth.uid;
+        allow update: if isSignedIn()
+          && isValidExam(incoming())
+          && isValidId(userId)
+          && isValidId(examId)
+          && isOwner(userId)
+          && incoming().ownerId == existing().ownerId
+          && incoming().createdAt == existing().createdAt
+          && incoming().updatedAt == request.time
+          && incoming().diff(existing()).affectedKeys().hasOnly([
+            'subject',
+            'type',
+            'date',
+            'startTime',
+            'endTime',
+            'room',
+            'material',
+            'topics',
+            'notes',
+            'updatedAt'
+          ])
+          && get(/databases/$(database)/documents/users/$(userId)).data.ownerId == request.auth.uid;
+        allow delete: if isSignedIn()
+          && isValidId(userId)
+          && isValidId(examId)
+          && isOwner(userId)
+          && get(/databases/$(database)/documents/users/$(userId)).data.ownerId == request.auth.uid;
+      }
+
+      match /lessons/{lessonId} {
+        allow get: if isSignedIn()
+          && isValidId(userId)
+          && isValidId(lessonId)
+          && isOwner(userId)
+          && get(/databases/$(database)/documents/users/$(userId)).data.ownerId == request.auth.uid;
+        allow list: if isSignedIn() && isOwner(userId) && existing().ownerId == request.auth.uid;
+        allow create: if isSignedIn()
+          && isValidId(userId)
+          && isValidId(lessonId)
+          && isOwner(userId)
+          && isValidLesson(incoming())
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time
+          && get(/databases/$(database)/documents/users/$(userId)).data.ownerId == request.auth.uid;
+        allow update: if isSignedIn()
+          && isValidLesson(incoming())
+          && isValidId(userId)
+          && isValidId(lessonId)
+          && isOwner(userId)
+          && incoming().ownerId == existing().ownerId
+          && incoming().createdAt == existing().createdAt
+          && incoming().updatedAt == request.time
+          && incoming().diff(existing()).affectedKeys().hasOnly([
+            'subject',
+            'title',
+            'notes',
+            'completed',
+            'examId',
+            'updatedAt'
+          ])
+          && get(/databases/$(database)/documents/users/$(userId)).data.ownerId == request.auth.uid;
+        allow delete: if isSignedIn()
+          && isValidId(userId)
+          && isValidId(lessonId)
+          && isOwner(userId)
+          && get(/databases/$(database)/documents/users/$(userId)).data.ownerId == request.auth.uid;
+      }
+    }
+  }
+}

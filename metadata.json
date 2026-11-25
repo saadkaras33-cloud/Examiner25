@@ -1,0 +1,6 @@
+{
+  "name": "Examiner",
+  "description": "Organize your exams with smart and simple scheduling",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

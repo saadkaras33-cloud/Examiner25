@@ -1,0 +1,41 @@
+[
+  {
+    "id": "usr_mwtegabe_nvkuo5",
+    "email": "saadkaras33@gmail.com",
+    "displayName": "Karas Saad",
+    "passwordHash": "",
+    "authProvider": "google",
+    "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJU7WEchWuRJCX2V4qga23I9cKWeR_6AhJ44_nOVDMc2cfh6-g=s96-c",
+    "themeId": "grad-starlight-obsidian",
+    "language": "en",
+    "savedMusic": [
+      {
+        "id": "spotify_album_6ZhfK221NirEZkXoXdTyQw",
+        "title": "Y Que Fue?",
+        "subtitle": "Album · 1 tracks",
+        "kind": "spotify",
+        "spotifyKind": "album",
+        "spotifyId": "6ZhfK221NirEZkXoXdTyQw",
+        "spotifyUrl": "https://open.spotify.com/album/6ZhfK221NirEZkXoXdTyQw",
+        "embedUrl": "https://open.spotify.com/embed/album/6ZhfK221NirEZkXoXdTyQw?utm_source=generator",
+        "thumbnailUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f84ac9a57d80efd18e42fa72",
+        "durationMs": 0,
+        "savedAt": "2026-11-22T14:17:14.202Z"
+      },
+      {
+        "id": "spotify_album_625NAQW5INiMrQUP8GKvIw",
+        "title": "يا حبيبنا | ريدبُل مزيكا صالونات",
+        "subtitle": "Album · 1 tracks",
+        "kind": "spotify",
+        "spotifyKind": "album",
+        "spotifyId": "625NAQW5INiMrQUP8GKvIw",
+        "spotifyUrl": "https://open.spotify.com/album/625NAQW5INiMrQUP8GKvIw",
+        "embedUrl": "https://open.spotify.com/embed/album/625NAQW5INiMrQUP8GKvIw?utm_source=generator",
+        "thumbnailUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0295508611bf80286e3663fda6",
+        "durationMs": 0,
+        "savedAt": "2026-11-22T09:41:43.202Z"
+      }
+    ],
+    "createdAt": "2026-11-23T15:20:09.368Z"
+  }
+]

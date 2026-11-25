@@ -1,0 +1,675 @@
+{
+  "v3:correlated:842d303d9eb5cdc0ddcfcabd7ffb4eb992848ae4f21598147b060ce50d010798": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-11-28",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Unit 1 Quadratic Equations",
+          "Unit 2 Matrices"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "date": "2026-11-30",
+        "startTime": "10:45",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Essay Writing",
+          "Modern Poetry"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "date": "2026-12-02",
+        "startTime": "08:30",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Chapter 4 Optics",
+          "Chapter 5 Waves"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics",
+        "title": "Unit 1 Quadratic Equations",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Unit 2 Matrices",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Essay Writing",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Modern Poetry",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Chapter 4 Optics",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Chapter 5 Waves",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "cachedAt": 1795614208573
+  },
+  "v2:correlated:b7e0d2cd9130fa4307287653e2de50e5218bc3b8fa2c2a4d69010155b9c6743d": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-11-28",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [],
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "date": "2026-11-30",
+        "startTime": "10:45",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [],
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "date": "2026-12-02",
+        "startTime": "08:30",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "General",
+        "title": "Unit 1 Quadratic Equations",
+        "notes": ""
+      },
+      {
+        "subject": "General",
+        "title": "Unit 2 Matrices",
+        "notes": ""
+      },
+      {
+        "subject": "General",
+        "title": "Essay Writing",
+        "notes": ""
+      },
+      {
+        "subject": "General",
+        "title": "Modern Poetry",
+        "notes": ""
+      },
+      {
+        "subject": "General",
+        "title": "Chapter 4 Optics",
+        "notes": ""
+      },
+      {
+        "subject": "General",
+        "title": "Chapter 5 Waves",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "cachedAt": 1795614137964
+  },
+  "v2:image/png:b51f6a6d39876b6153c9520965228320776c6025efc523baab690acac63dc2e4": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-11-28",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Unit 1",
+          "Unit 2"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "date": "2026-11-30",
+        "startTime": "10:45",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Essay Writing",
+          "Poetry"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "date": "2026-12-02",
+        "startTime": "08:30",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Optics",
+          "Waves"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics",
+        "title": "Unit 1",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Unit 2",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Essay Writing",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Poetry",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Optics",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Waves",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "cachedAt": 1795614129234
+  },
+  "text/plain:4d7d696cf54fce28e76a917775f0149376806444e45e5c6780133389089b4d72": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-12-05",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "101",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Algebra",
+          "Fractions"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics",
+        "title": "Algebra",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Fractions",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "cachedAt": 1795613682334
+  },
+  "correlated:ac6821172c4856f5176c54cd292b5944c6b2559f71b59ddd7d3fed40edbfddb9": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-11-28",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Quadratics",
+          "Functions",
+          "Derivatives"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "date": "2026-11-30",
+        "startTime": "10:45",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Grammar",
+          "Comprehension"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "date": "2026-12-02",
+        "startTime": "08:30",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Chapter 4 Optics",
+          "Chapter 5 Waves"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics",
+        "title": "Quadratics",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Functions",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Derivatives",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Grammar",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Comprehension",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Chapter 4 Optics",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Chapter 5 Waves",
+        "notes": ""
+      }
+    ],
+    "ignored": [
+      "Monthly Exam Schedule - November 2026",
+      "Included Lessons Sheet - Grade 11"
+    ],
+    "cachedAt": 1795613627141
+  },
+  "image/png:6f69dd91e4839a4f1435940012974bff080619cacb17d1ec95a428bf2e8dded1": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-11-28",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Unit 1"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "date": "2026-11-30",
+        "startTime": "10:45",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Essay Writing"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "date": "2026-12-02",
+        "startTime": "08:30",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Optics",
+          "Waves"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics",
+        "title": "Unit 1",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Essay Writing",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Optics",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Waves",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "cachedAt": 1795613609012
+  },
+  "correlated:12f754616c946d892d7bf3a6353fb1f83f22532eec5686a84b3f6602893be5ef": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-11-29",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Algebra",
+          "Calculus"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "date": "2026-12-01",
+        "startTime": "10:30",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Grammar",
+          "Reading"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics",
+        "title": "Algebra",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Calculus",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Grammar",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Reading",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "totalPages": 1,
+    "cachedAt": 1795613457024
+  },
+  "application/pdf:694bf33dadb6d452964301f876aebb160d7c8dda047dc2bd08a440f29908f05c": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-11-29",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Algebra",
+          "Calculus"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "date": "2026-12-01",
+        "startTime": "10:30",
+        "endTime": "",
+        "room": "",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Grammar",
+          "Reading"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics",
+        "title": "Algebra",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Calculus",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Grammar",
+        "notes": ""
+      },
+      {
+        "subject": "English AL",
+        "title": "Reading",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "totalPages": 1,
+    "cachedAt": 1795613437604
+  },
+  "correlated:a61ff09ae36e669ef8fb7cb5094d5fc8341a1923848e9b34214c11daac6e8398": {
+    "exams": [
+      {
+        "subject": "Biology",
+        "date": "2026-12-03",
+        "startTime": "11:00",
+        "endTime": "",
+        "room": "Hall 4",
+        "type": "midterm",
+        "material": "",
+        "topics": [
+          "Cell Division",
+          "Genetics",
+          "DNA Replication"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Biology",
+        "title": "Cell Division",
+        "notes": ""
+      },
+      {
+        "subject": "Biology",
+        "title": "Genetics",
+        "notes": ""
+      },
+      {
+        "subject": "Biology",
+        "title": "DNA Replication",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "cachedAt": 1795531608551
+  },
+  "correlated:a342abc7437bf1cbdca0894ce09adb6440b1b5143ff7b2a84e779060198e99df": {
+    "exams": [
+      {
+        "subject": "Mathematics",
+        "date": "2026-11-28",
+        "startTime": "09:00",
+        "endTime": "",
+        "room": "Room B12",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Quadratic Equations",
+          "Matrices",
+          "Linear Inequalities"
+        ],
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "date": "2026-11-30",
+        "startTime": "10:30",
+        "endTime": "",
+        "room": "Lab 2",
+        "type": "monthly",
+        "material": "",
+        "topics": [
+          "Kinematics",
+          "Newton Laws"
+        ],
+        "notes": ""
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics",
+        "title": "Quadratic Equations",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Matrices",
+        "notes": ""
+      },
+      {
+        "subject": "Mathematics",
+        "title": "Linear Inequalities",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Kinematics",
+        "notes": ""
+      },
+      {
+        "subject": "Physics",
+        "title": "Newton Laws",
+        "notes": ""
+      }
+    ],
+    "ignored": [],
+    "cachedAt": 1795531506835
+  },
+  "application/pdf:7d595d9a8896ad7a34a42c4dd29e96732bd1bd4b7eb84a415ac876174f868b2f": {
+    "exams": [
+      {
+        "subject": "Mathematics Calculus",
+        "date": "2026-06-15",
+        "type": "final",
+        "startTime": "09:00",
+        "topics": [
+          "Derivatives",
+          "Integrals",
+          "Differential Equations"
+        ]
+      },
+      {
+        "subject": "Physics Mechanics",
+        "date": "2026-06-18",
+        "type": "midterm",
+        "startTime": "11:30",
+        "topics": []
+      }
+    ],
+    "lessons": [
+      {
+        "subject": "Mathematics Calculus",
+        "title": "Derivatives"
+      },
+      {
+        "subject": "Mathematics Calculus",
+        "title": "Integrals"
+      },
+      {
+        "subject": "Mathematics Calculus",
+        "title": "Differential Equations"
+      }
+    ],
+    "ignored": [],
+    "totalPages": 1,
+    "cachedAt": 1795340104465
+  }
+}

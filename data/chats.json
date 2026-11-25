@@ -1,0 +1,85 @@
+[
+  {
+    "id": "chat_mwql7a0x_otw74c",
+    "secretCode": "EXM-4K4N2S",
+    "groupName": "Physics Crew",
+    "schoolName": "Cairo High",
+    "grade": "Grade 11",
+    "className": "11-B",
+    "backgroundMusic": null,
+    "theme": {
+      "mode": "wallpaper-clan",
+      "wallpaper": {
+        "id": "wclan-anime-sakura",
+        "name": "Kyoto Sakura Twilight",
+        "category": "Anime",
+        "imageUrl": "/wallpapers/wclan-anime-sakura.jpg",
+        "recommendedTheme": "plum"
+      }
+    },
+    "ownerId": "usr_mwql79yq_hy6dq9",
+    "members": [
+      {
+        "userId": "usr_mwql79yq_hy6dq9",
+        "displayName": "Verify Tester",
+        "email": "wclan.verify.1795276376878@example.com",
+        "role": "owner",
+        "joinedAt": "2026-11-21T15:52:56.961Z"
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg_mwql7a0x_kl6te7",
+        "chatId": "chat_mwql7a0x_otw74c",
+        "senderId": "usr_mwql79yq_hy6dq9",
+        "senderName": "Verify Tester",
+        "kind": "system",
+        "text": "Verify Tester created \"Physics Crew\" · Secret code: EXM-4K4N2S",
+        "createdAt": "2026-11-21T15:52:56.961Z"
+      }
+    ],
+    "createdAt": "2026-11-21T15:52:56.961Z",
+    "updatedAt": "2026-11-21T15:52:56.961Z"
+  },
+  {
+    "id": "chat_mwnx2ugw_b6ucrx",
+    "secretCode": "EXM-62SGU9",
+    "groupName": "Grade 10",
+    "schoolName": "Test School",
+    "grade": "Grade 10",
+    "className": "",
+    "backgroundMusic": null,
+    "theme": {
+      "mode": "wallpaper-clan",
+      "wallpaper": {
+        "id": "clan-pastel-clouds",
+        "name": "Dreamy Pastel Clouds",
+        "category": "Aesthetic",
+        "imageUrl": "/wallpapers/pastel-clouds.jpg"
+      }
+    },
+    "ownerId": "usr_mwnx2ueh_53f8ah",
+    "members": [
+      {
+        "userId": "usr_mwnx2ueh_53f8ah",
+        "displayName": "verify_1795114926945",
+        "email": "verify_1795114926945@example.com",
+        "role": "owner",
+        "joinedAt": "2026-11-19T19:02:07.040Z"
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg_mwnx2ugw_f9q6df",
+        "chatId": "chat_mwnx2ugw_b6ucrx",
+        "senderId": "usr_mwnx2ueh_53f8ah",
+        "senderName": "verify_1795114926945",
+        "kind": "system",
+        "text": "verify_1795114926945 created \"Grade 10\" · Secret code: EXM-62SGU9",
+        "createdAt": "2026-11-19T19:02:07.040Z"
+      }
+    ],
+    "createdAt": "2026-11-19T19:02:07.040Z",
+    "updatedAt": "2026-11-19T19:02:07.040Z"
+  }
+]
